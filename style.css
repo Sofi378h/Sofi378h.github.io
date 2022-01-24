@@ -90,7 +90,7 @@
   }
 
   #designprojekt1 {
-    background-image:  url('images/designprojekt1.jpg');
+    background-image:  url('images/spiralmodel.png');
   }
 
   #htmlnoter {
@@ -105,9 +105,9 @@
     background-image:  url('images/dotdotdot.jpg');
   }
 
-  #dansk {
-    background-image:  url('images/dansk.jpg');
-  }
+  #grafiskdesignnoter {
+    background-image: url('images/index baggrund.jpg');
+  }  
 
   .content .element {
     max-width: 49%;
@@ -150,7 +150,7 @@
   /* Accordion CSS */
   .accordion {
     background-color: transparent;
-    color: rgb(253, 253, 253);
+    color: rgb(255, 255, 255);
     text-shadow:
     -1px -1px 1px #000,
     1px -1px 1px #000,

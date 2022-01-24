@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sofies logbog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+      <!-- Navigation bar HTML -->
+       <div class="topnav" id="myTopnav">
+        <a href="index.html">Index</a>
+        <a href="logbog.html">LOGBOG</a>
+        <a href="csshtmlnoter.html">CSS+HTML</a>
+        <a href="grafiskdesignnoter.html">GRAFISK DESIGN</a>
+        <a href="designprojekt1.html">DESIGNPROJEKT 1</a>
+        <a href="so.html"class=active>PROGRAMMERING</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+        <!-- Accordion HTML -->
+        <div class="content" id="so">
+            <div class="element left">
+                <h2>Noter</h2>
+                <button class="accordion">Hello world (console log)</button>
+                <div class="panel">
+                <p>Mens man er ved at kode et projekt kan det være super nyttigt at få programmet til at skrive ting til en i konsollen. F.eks. "hello from setup.js" når det dokument bruges/åbnes. 
+                    <br>Man åbner konsollen ved at trykke Fn,F12.
+                    <br>For at få programmet til at skrive noget i konsollen skal man i sit dokument skrive console.log(<i>besked</i>). Man kan også få variable skrevet i konsollen. Feks. gamestaten fra flappy bird.
+                </p>
+                </div>
+
+                <button class="accordion">Variable og datatyper</button>
+                <div class="panel">
+                <p>Variable kan opbevare et stykke data (et tal f.eks.). Man kan lave variable på flere måder.
+                    <ul align=left>
+                        <li>var <br>Markerer en variabel (bruges i ældre programmer/til ældre browsere)</li>
+                        <li>const <br>Markerer en konstant, altså en variabel som ikke ændrer sig</li>
+                        <li>let <br>Markerer en variabel hvis værdi kan ændre sig.</li>
+                        <li><i>Ikke noget</i> <br>Man kan også bare lade være at skrive noget foran sine variable. Det er dog bedst at gøre det da det gør koden lettere at forstå og mindsker antallet af fejl.</li>
+                    </ul>
+                <p>Der findes flere forskellige typer data som variablerne kan opbevare. De mest almindelige er:
+                    <ul align=left>
+                        <li>Tal</li>
+                        <li>Strings (tekst)</li>
+                        <li>Objekter</li>
+                        <li>Booleans (true/false)</li>
+                    </ul>
+                </p>
+                </div>
+
+                <button class="accordion">Operatorer</button>
+                <div class="panel">
+                <p>Operatorer giver værdier til variable. Der er vildt mange forskellige, men som rgel bruger de regnetegn og giver derfor nogendlunde mening.</p>
+                </div>
+
+                <button class="accordion">If-statements</button>
+                <div class="panel">
+                <p>Når man koder vil man tit gerne have at noget af koden kun bliver udført på bestemte tidspunkter. Det gør man med if-statements. Der er 3 slags:
+                    <ul align=left>
+                        <li>if <br>Her sætter man en <i>condition</i> som tjekkes, hvis den er true bliver det følgende kode udført.</li>
+                        <li>else <br>Virker kun i forbindelse med et if. Hvis den <i>condition</i> vi har fastsat i det første statement er false, bliver det stykke kode som står efter else udført, i stedet for det som står efter if.</li>
+                        <li>else if <br>Lidt en kobination af de 2 andre. Sættes ind imellem de andre og fastsætter en ny <i>condition</i> som skal tjekkes hvis den første er false. Man kan altså have en liste af ting som skal tjekkes og så et else til sidst, som kun bliver brugt hvis ingen af dem er true.
+                        <br>Så f.eks. vi har condition1, condition2 og condition3. Den første er bare if(condition1)(kode), den næste er if else(conditon2) (anden kode) og så if(condition3) (tredje stykke kode) og så til sidst else(fjerde kode). Så tjekker den dem fra en ende af og aktiverer det stykke kode som skal bruges i den bestemte situation.</li>
+                    </ul>
+                </p>
+                </div>
+
+                <button class="accordion">Funktioner</button>
+                <div class="panel">
+                <p>En funktion er et stykke kode man selv "designer". Man starter med at skrive function, så skriver man dens navn og til sidst en parentes med de parametre den skal bruge. Så bruger man krøllede parenteser til at markere det kode funktionen skal udføre og til sidst skriver man return og definerer der hvad funktionen skal spytte ud igen. 
+                   <br>Man bruger funktioner fordi de kan køre det samme kode igen og igen, så man slipper for at skrive det mange gange. Man er nødt til at "kalde" en funktion før den gør noget, den starter ikke bare uden grund. 
+                </p>
+                </div>
+
+                <button class="accordion">Arrays</button>
+                <div class="panel">
+                <p>En bestemt slags variabel som kan opbevare mere end en værdi. Man skriver dem sådan: const arraynames = [værdi1, værdi2, værdi3, ...];. Når man så skal bruge en af værdierne skriver man bare dens indexnummer. Man starter med 0, så hvis jeg skulle bruge værdi1 til noget ville jeg bare skrive let arrayname[0].</p>
+                </div>
+
+                <button class="accordion">Loops</button>
+                <div class="panel">
+                <p>Loops gentager en bestemt bid kode så længe deres <i>condition</i> er true. Der er flere forskellige slags men vi har ikke haft om den endnu. 
+                <ul align=left>
+                    <li>while loop <br>Bliver ved at køre så længe dens conditioner true. Skrives: while(condition) og så krøllede parenteser om det kode man gerne vil have udført. Man skal huske at inkludere et stykke som gør ens variabel større, ellers fortsætter loopet forevigt og ens browser crasher.</li>
+                </ul></p>
+                </div>
+
+                <button class="accordion">Prompt/alert/confirm</button>
+                <div class="panel">
+                <p>Der er 3 slags pop-up bokse:
+                    <ul align=left>
+                        <li>Alert <br>Man bruger alert-bokse til at sørge for at brugeren får vigtige informationer. Man Skal klikke ok for at komme videre. for at lave en skriver man: alert("tekst");</li>
+                        <li>Confirm <br>Bruges når brugeren skal bekræfte eller sige ja til noget. Her har man to muligheder: ok og cancel. Hvis brugeren vælger ok viser boksen true, hvis ikke viser den false. Skrives confirm("tekst");</li>
+                        <li>Prompt <br>Her skal brugeren indtaste en værdi. Skrives: prompt("tekst", "eksempeltekst"); </li>
+                    </ul>
+                </p>
+                </div>
+
+                <button class="accordion">ny</button>
+                <div class="panel">
+                <p>xxx</p>
+                </div>
+            </div>
+
+            <!--div class="element left">
+                <h2>SO Opgaver</h2>
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div-->
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
